@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+body {
+    font-family: arial;
+    font-size: 20px;
+    text-align: justify;
+    color: #000000;
+    background-color: #f4f1de;
+    padding: 0;
+    margin: 0;
+}
+
+body img {
+    padding: 30px;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+    background-color: #edb935;
+}
+
+nav h1 {
+    font-family: 'Gaegu', sans-serif;
+    color: #ae0202;
+    font-size: 70px;
+    position: flex;
+    left: 200px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    font-family: 'Gaegu', sans-serif;
+    font-size: 30px;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ae0202;
+}
+
+h2 {
+    font-family: 'Gaegu', sans-serif;
+    font-size: 40px;
+    color: #ae0202;
+    margin: 20px;
+}
+
+p {
+    margin: 30px;
+}
+
+div ul {
+    list-style: none;
+}
+
+div ul li {
+    align-items: center;
+    display: flex;
+}
+
+div ul li a {
+    text-decoration: none;
+    color: #000000;
+    /* colocar borda em cada um e deixar em uma única linha */
+}
+
+footer {
+    position: flex;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+    background-color: #edb935;
+}
+
+footer p {
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
