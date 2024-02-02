@@ -15,10 +15,16 @@ body img {
 }
 
 nav {
-    align-items: center;
+    position: sticky;
+    top: 0;
     display: flex;
+    align-items: center;
+
+    /* 
     justify-content: space-between;
     padding: 1px;
+    */
+    
     background-color: #edb935;
 }
 
@@ -34,6 +40,7 @@ nav ul {
     display: flex;
     align-items: center;
     list-style: none;
+    /* margin-inline-start: 1000px; */
 }
 
 nav ul li {
@@ -45,6 +52,10 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #ae0202;
+}
+
+nav ul li a:hover {
+    color: #000000;
 }
 
 h2 {
@@ -60,17 +71,27 @@ p {
 
 div ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    margin-bottom: 0;
 }
 
 div ul li {
-    align-items: center;
     display: flex;
+    align-items: center;
+
 }
 
 div ul li a {
     text-decoration: none;
     color: #000000;
-    /* colocar borda em cada um e deixar em uma única linha */
+    margin: 20px;
+    margin-left: 0;
+}
+
+ul li img {
+    margin-right: 0;
 }
 
 footer {
