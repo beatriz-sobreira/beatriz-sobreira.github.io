@@ -50,3 +50,7 @@ body{
 .btn-download:hover span{
     color: #FBFEF9;
 }
+
+.projects p{
+    color: #000004;
+}
