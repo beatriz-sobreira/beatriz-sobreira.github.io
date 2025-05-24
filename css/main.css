@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     font-family: "Prompt", sans-serif;
     font-size: 24px;
@@ -17,6 +21,17 @@ body{
     align-items: center;
     justify-content: center;
     height: 120px;
+
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+    transition: height 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header.shrink{
+    height: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 4, 0.2);
 }
 
 .header-container{
@@ -46,11 +61,11 @@ body{
     text-decoration: none;
     color: #000004;
     font-size: 20px;
+    transition: color 0.3s ease;
 }
 
 .menu-link:hover, .footer-link:hover{
     color: #FBFEF9;
-    transition: 0.3s;
 }
 
 
@@ -62,6 +77,8 @@ body{
     justify-content: center;
     align-items: center;
     padding: 120px;
+
+    padding-top: 200px; 
 }
 
 .home-container{
@@ -260,6 +277,7 @@ body{
 .footer-link{
     text-decoration: none;
     color: #000004;
+    transition: color 0.3s ease;
 }
 
 
@@ -299,6 +317,12 @@ body{
     .home-container{
         flex-direction: column;
         align-items: center;
+    }
+
+    .about-third-part{
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
     }
 
 }
