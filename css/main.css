@@ -60,6 +60,7 @@ body{
 .home{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 120px;
 }
 
@@ -109,7 +110,6 @@ body{
     font-weight: 700;
 }
 
-
 .btn-download {
     position: relative;
     overflow: hidden;
@@ -156,23 +156,85 @@ body{
 
 
 
-/* .btn-download{
-    height: 56px;
-    width: 280px;
-    font-size: 24px;
-    font-weight: 700;
-    color: #FBFEF9;
-    text-align: center;
-    background-color: #A63446;
-    border: none;
-    border-radius: 16px;
-    cursor: pointer;
-    transition: 0.3s ease;
+/* about section */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
 }
 
-.btn-download:hover{
-    background-color: #0C6291;
-} */
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 64px;
+}
+
+.about-first-part{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.about-title{
+    color: #0C6291;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.about-second-part{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.skills-title{
+    color: #0C6291;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.about-third-part{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-third-part p{
+    color: #0C6291;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.currently-working, .tools, .interested{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.about-third-part .about-icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    justify-items: center;
+}
+
+.about-icons img{
+    background-color: rgba(12, 98, 145, 0.5);
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.about-icons img:hover{
+    transform: scale(1.05);
+}
+
+
 
 
 /* footer section */
