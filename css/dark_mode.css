@@ -6,3 +6,47 @@ body{
 .header, .footer{
     color: #000004;
 }
+
+.btn-download {
+    position: relative;
+    overflow: hidden; 
+    height: 56px;
+    width: 280px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FBFEF9;
+    text-align: center;
+    background-color: #A63446;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn-download::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0C6291;
+    z-index: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+    border-radius: 16px;
+}
+
+.btn-download:hover::before {
+    transform: scaleX(1);
+}
+
+.btn-download span{
+    position: relative;
+    z-index: 1;
+}
+
+.btn-download:hover span{
+    color: #FBFEF9;
+}
