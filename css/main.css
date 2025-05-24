@@ -119,6 +119,7 @@ body{
     background-color: #A63446;
     border: none;
     border-radius: 16px;
+    cursor: pointer;
 }
 
 .btn-download:hover{
@@ -155,3 +156,56 @@ body{
 
 
 
+
+
+
+
+
+
+
+/* RESPONSIVE CSS */
+
+
+/* lg */
+@media (max-width: 1024px) {
+
+    .header-nav, .header-menu-text, .header-menu-img{
+        gap: 16px;
+    }
+
+}
+
+
+/* md */
+@media (max-width: 768px) {
+
+    .header-title{
+        display: none;
+    }
+
+    .header-nav, .header-menu-text, .header-menu-img{
+        gap: 24px;
+    }
+
+    .home-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+
+/* sm */
+@media (max-width: 640px) {
+
+    /* fazer menu hamburguer */
+
+}
+
+
+
+/* xs */
+@media (max-width: 475px) {
+    
+}
