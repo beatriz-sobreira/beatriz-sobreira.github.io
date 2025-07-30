@@ -308,6 +308,13 @@ body{
     border-radius: 16px 16px 0px 0px;
 }
 
+.projects-img img {
+    height: 200px;
+    width: 392px;
+    border-radius: 16px 16px 0px 0px;
+    border: 4px solid #0C6291;
+}
+
 .projects-box .projects-name{
     background-color: #FBFEF9;
     height: 100px;
@@ -321,7 +328,15 @@ body{
     gap: 16px;
 }
 
-.projects-name button{
+.projects-name a{
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.read-more-btn{
     border: none;
     border-radius: 8px;
     background-color: #A63446;
@@ -333,7 +348,7 @@ body{
     transition: background-color 0.3 ease;
 }
 
-.projects-name button:hover{
+.read-more-btn:hover{
     background-color: #7C2734;
 }
 
@@ -427,8 +442,8 @@ body{
 /* menu mode: dark mode */
 
 .header-menu-mode{
-    height: 40px;
-    width: 80px;
+    height: 32px;
+    width: 64px;
     background-color: #000004;
     border-radius: 64px;
     position: relative;
@@ -436,8 +451,8 @@ body{
 }
 
 .header-menu-mode .menu-mode{
-    height: 40px;
-    width: 40px;
+    height: 32px;
+    width: 32px;
     background-color: #0C6291;
     border-radius: 50%;
     transform: scale(.86);
@@ -447,7 +462,7 @@ body{
 }
 
 .header-menu-mode.dark .menu-mode{
-    left: 40px;
+    left: 32px;
     background-color: #FBFEF9;
 }
 
