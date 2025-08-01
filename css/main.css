@@ -87,12 +87,21 @@ body{
     gap: 64px;
 }
 
+.home-border-img{
+    padding: 10px;
+    border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+    background: linear-gradient(145deg, #A63446, #0C6291);
+    transition: transform 0.3s ease;
+}
+
+.home-border-img:hover{
+    transform: rotate(1deg) scale(1.03);
+}
+
 .home-img img{
     height: 400px;
     width: 400px;
-    border: 8px solid #0C6291;
-    border-radius: 32px;
-    /* box-shadow: 0 4px 10px rgba(12, 98, 145, 0.7); */
+    border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
 }
 
 .home-second-part{
